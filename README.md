@@ -1,11 +1,12 @@
 # My Portfolio
 
-[Visit Site](https://harshitrajsinha.github.io/portfolio/)
+[Visit Site](https://harshitrajsinha.github.io)
 
 # Project List
 
 ### Golang
 
+- MEDIGO: [GitHub](https://github.com/harshitrajsinha/medi-go)
 - VANMANGO: [GitHub](https://github.com/harshitrajsinha/goclient-vanmango)
 - GSHORTIFY: [GitHub](https://github.com/harshitrajsinha/go-url-shortener)
 
