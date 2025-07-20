@@ -7,8 +7,8 @@
 ### Golang
 
 - MEDIGO: [GitHub](https://github.com/harshitrajsinha/medi-go)
+- GOGETJOB: [GitHub](https://github.com/harshitrajsinha/go-get-job)
 - VANMANGO: [GitHub](https://github.com/harshitrajsinha/goclient-vanmango)
-- GSHORTIFY: [GitHub](https://github.com/harshitrajsinha/go-url-shortener)
 
 ### VueJS
 
