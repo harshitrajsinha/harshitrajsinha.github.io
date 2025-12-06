@@ -542,7 +542,7 @@ input[type="radio"]#vibe:checked ~ .vibe {
     font-size: 2vw;
   }
 
-  .socials-resume {
+  /* .socials-resume {
     width: 4.5vw;
     height: 5vw;
   }
@@ -550,7 +550,7 @@ input[type="radio"]#vibe:checked ~ .vibe {
   .socials-gmail {
     width: 4vw;
     height: 4vh;
-  }
+  } */
 
   section {
     margin-left: auto;
@@ -586,8 +586,8 @@ input[type="radio"]#vibe:checked ~ .vibe {
   }
 
   .cards-container__card {
-    max-height: 40vh;
-    height: auto;
+    /* max-height: 40vh;
+    height: auto; */
     min-width: 72vw;
     width: 65vw;
     margin: 0 auto;
@@ -595,8 +595,8 @@ input[type="radio"]#vibe:checked ~ .vibe {
   }
 
   img.portrait-orient {
-    max-height: 21vh;
-    height: 21vh;
+    /* max-height: 21vh; */
+    height: 100%;
   }
 }
 
@@ -754,8 +754,8 @@ input[type="radio"]#vibe:checked ~ .vibe {
   }
 
   img.portrait-orient {
-    max-height: 21vh;
-    height: 21vh;
+    /* max-height: 21vh; */
+    height: 100%;
   }
 }
 
