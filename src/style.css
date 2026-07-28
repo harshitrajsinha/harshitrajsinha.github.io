@@ -141,10 +141,14 @@ img.social-links {
 @keyframes glow {
   0%,
   100% {
-    box-shadow: 0 0 5px #6e57e0, 0 0 10px #6e57e0;
+    box-shadow:
+      0 0 5px #6e57e0,
+      0 0 10px #6e57e0;
   }
   50% {
-    box-shadow: 0 0 10px #bd49da, 0 0 20px #bd49da;
+    box-shadow:
+      0 0 10px #bd49da,
+      0 0 20px #bd49da;
   }
 }
 
@@ -323,14 +327,34 @@ section#work-experience {
 
 .list-component__card-year {
   font-size: 1.5rem;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
 }
 
 .list-component__card-title {
   text-decoration: underline;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
   font-size: 2rem;
 }
 
@@ -344,8 +368,18 @@ u {
 }
 
 .list-component__card-desc li {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
   list-style: disc;
   text-align: justify;
   font-size: 1.5rem;
@@ -509,6 +543,10 @@ div.cards-container__card {
 }
 
 input[type="radio"]#featured:checked ~ .featured {
+  display: flex;
+}
+
+input[type="radio"]#devops:checked ~ .devops {
   display: flex;
 }
 

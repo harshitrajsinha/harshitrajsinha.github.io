@@ -70,12 +70,14 @@
               class="social-links" src="./public/logo/github-icon.png" alt="github" /></a>
           <a href="https://www.linkedin.com/in/rajsinha08" title="linkedin@rajsinha08" target="_blank"><img
               class="social-links" src="./public/logo/linkedin-icon.png" alt="linkedin" /></a>
+          <a href="https://medium.com/@_rajSinha08" title="medium@_rajSinha08" target="_blank"><img class="social-links"
+              src="./public/logo/medium-icon.png" alt="medium" /></a>
         </div>
         <a href="#projects"><button class="project-button">Jump to Projects</button></a>
       </div>
       <div id="my-photo" class="my-photo">
         <img class="my-photo__image" src="./public/photo.png" alt="photo" />
-        <div class="play-btn-container">
+        <!-- <div class="play-btn-container">
           <img id="openVideo" class="my-photo__play-btn" src="./public/new-play-btn.png" alt="video play button" />
           <div class="video-modal" id="videoModal">
             <div class="video-container">
@@ -85,19 +87,21 @@
               </video>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </section>
     <div class="marquee-container">
       <div class="marquee-left"></div>
       <div class="marquee">
-        <img class="marquee-img" src="./public/projects/stack-icons/golang-icon.png" alt="golang" />
-        <img class="marquee-img" src="./public/projects/stack-icons/js.png" alt="js" />
-        <img class="marquee-img" src="./public/projects/stack-icons/php-logo.png" alt="php" />
-        <img class="marquee-img" src="./public/projects/stack-icons/postgresql-icon.png" alt="postgresql" />
-        <img class="marquee-img" src="./public/projects/stack-icons/vuejs.png" alt="vuejs" />
-        <img class="marquee-img" src="./public/projects/stack-icons/graphql.png" alt="graphql" />
+        <img class="marquee-img" src="./public/projects/stack-icons/kubernetes.png" alt="kubernetes" />
         <img class="marquee-img" src="./public/projects/stack-icons/docker.png" alt="docker" />
+        <img class="marquee-img" src="./public/projects/stack-icons/terraform.png" alt="terraform" />
+        <img class="marquee-img" src="./public/projects/stack-icons/golang-icon.png" alt="golang" />
+        <img class="marquee-img" src="./public/projects/stack-icons/aws.png" alt="aws" />
+        <img class="marquee-img" src="./public/projects/stack-icons/argocd.png" alt="argocd" />
+        <img class="marquee-img" src="./public/projects/stack-icons/php-logo.png" alt="php" />
+        <img class="marquee-img" src="./public/projects/stack-icons/python-logo.png" alt="python" />
+        <img class="marquee-img" src="./public/projects/stack-icons/github-actions.png" alt="gitHub actions" />
       </div>
 
       <div class="marquee-right"></div>
@@ -119,15 +123,15 @@
               </li>
               <li>
                 Contributed to the company’s most potential client, Sliceinn,
-                by <u>creating the backend through Webflow CMS</u> and
-                <u>integrated API vendors– Google API</u> for a differentiable
+                by creating the backend and
+                <u>integrated API vendor – Google API</u> for a differentiable
                 feature.
               </li>
             </ul>
             <div class="list-component__skills">
               <p><em>Skills Acquired</em></p>
               <p class="skills-list">
-                Project management, Node, JavaScript, REST, Webflow
+                Project management, Node, JavaScript, REST
               </p>
             </div>
           </div>
@@ -140,15 +144,15 @@
             </h1>
             <ul class="list-component__card-desc">
               <li>
-                <u>Developed and maintained the NC portal</u> for a seamless
+                Developed and maintained the NC portal for a seamless
                 client onboarding experience and integrated functionality to
-                enhance user interaction using HTML, CSS, jQuery, and PHP,
+                enhance user interaction
                 <u>ensuring secure and authenticated service</u> through
                 robust system implementation.
               </li>
               <li>
                 Played a <u>key role in the UCIC project</u>, which was
-                instrumental in driving <u>business growth</u> that helped
+                instrumental in driving business growth that helped
                 enhance Muthoot Fincorp's profitability through strategic
                 project involvement.
               </li>
@@ -156,7 +160,7 @@
             <div class="list-component__skills">
               <p>Skills Acquired</p>
               <p class="skills-list">
-                HTML, CSS, PHP, CodeIgniter, JavaScript, JQuery, REST
+                PHP, CodeIgniter, JavaScript, REST, Docker, Redis
               </p>
             </div>
           </div>
@@ -169,13 +173,128 @@
         <!-- Projects Tabs-->
         <input type="radio" id="featured" name="language" value="Featured" checked />
         <label for="featured">Featured</label>
+        <input type="radio" id="devops" name="language" value="DevOps" />
+        <label for="devops">DevOps</label>
         <input type="radio" id="golang" name="language" value="Golang" />
         <label for="golang">Golang</label>
-        <input type="radio" id="javascript" name="language" value="JavaScript" />
+        <!-- <input type="radio" id="javascript" name="language" value="JavaScript" />
         <label for="javascript">JavaScript</label>
         <input type="radio" id="vibe" name="language" value="vibe" />
-        <label for="vibe">Vibe</label>
+        <label for="vibe">Vibe</label> -->
         <!-- Projects List-->
+
+        <div class="cards-container__card featured devops">
+          <div class="cards-container__card-img">
+            <img class="portrait-orient" src="./public/projects/groovify.png" />
+            <img class="landscape-orient" src="./public/projects/groovify.png" />
+          </div>
+          <div class="cards-container__card-info">
+            <div class="card-info__title">GROOVIFY</div>
+            <div class="card-info__desc">
+              DevOps pipeline build for a 3-tier music streaming project. The project involves migration of external
+              services —
+              Clerk, Cloudinary, MongoDB to AWS native services — Cognito, S3, DocumentDB, respectively.
+            </div>
+            <div class="card-info__stack">
+              <ul>
+                <li>
+                  <img src="./public/projects/stack-icons/docker.png" alt="DOCKER" title="DOCKER" />
+                </li>
+                <li>
+                  <img src="./public/projects/stack-icons/aws.png" alt="AWS" title="AWS" />
+                </li>
+                <li>
+                  <img src="./public/projects/stack-icons/terraform.png" alt="Terraform" title="Terraform" />
+                </li>
+                <li>
+                  <img src="./public/projects/stack-icons/github-actions.png" alt="GitHub Actions"
+                    title="GitHub Actions" />
+                </li>
+              </ul>
+            </div>
+            <div class="card-info__links">
+              <a href="https://github.com/harshitrajsinha/groovify-devops" target="_blank"><button class="github-link">
+                  View Source<span class="source-icon"><img
+                      src="./public/projects/stack-icons/github-logo.png" /></span></button></a>
+              <a href="https://medium.com/@_rajSinha08/groovify-devops-project-47d9d840873b" target="_blank"><button
+                  class="site-link">Write-Up</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="cards-container__card featured devops">
+          <div class="cards-container__card-img">
+            <img class="portrait-orient" src="./public/projects/wardrobe.png" />
+            <img class="landscape-orient" src="./public/projects/wardrobe.png" />
+          </div>
+          <div class="cards-container__card-info">
+            <div class="card-info__title">WARDROBE</div>
+            <div class="card-info__desc">
+              DevOps end-to-end pipeline implemented on a microservice (e-commerce) project. The project includes CI
+              pipeline for each microservice and deployment on AWS EKS (Kubernetes) via Helm.
+            </div>
+            <div class="card-info__stack">
+              <ul>
+                <li>
+                  <img src="./public/projects/stack-icons/kubernetes.png" alt="Kubernetes" title="Kubernetes" />
+                </li>
+                <li>
+                  <img src="./public/projects/stack-icons/docker.png" alt="DOCKER" title="DOCKER" />
+                </li>
+                <li>
+                  <img src="./public/projects/stack-icons/aws.png" alt="AWS" title="AWS" />
+                </li>
+                <li>
+                  <img src="./public/projects/stack-icons/terraform.png" alt="Terraform" title="Terraform" />
+                </li>
+                <li>
+                  <img src="./public/projects/stack-icons/github-actions.png" alt="GitHub Actions"
+                    title="GitHub Actions" />
+                </li>
+                <li>
+                  <img src="./public/projects/stack-icons/helm.png" alt="Helm" title="Helm" />
+                </li>
+              </ul>
+            </div>
+            <div class="card-info__links">
+              <a href="https://github.com/harshitrajsinha/the-wardrobe-devops" target="_blank"><button
+                  class="github-link">
+                  View Source<span class="source-icon"><img
+                      src="./public/projects/stack-icons/github-logo.png" /></span></button></a>
+              <a href="https://medium.com/@_rajSinha08/the-wardrobe-devops-project-89273ebc4b9e" target="_blank"><button
+                  class="site-link">Write-Up</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="cards-container__card featured devops">
+          <div class="cards-container__card-img">
+            <img class="portrait-orient" src="./public/projects/rag-pipeline.png" />
+            <img class="landscape-orient" src="./public/projects/rag-pipeline.png" />
+          </div>
+          <div class="cards-container__card-info">
+            <div class="card-info__title">MEDIGO AI</div>
+            <div class="card-info__desc">
+              DevOps-AI pipeline built on "MEDIGO" project that answers developers' questions on the project
+              architecture, internal working of project, deployment status, summarized view of deployment logs — via AI
+              agent.
+            </div>
+            <div class="card-info__stack">
+              <ul>
+                <li>
+                  <img src="./public/projects/stack-icons/aws-bedrock.png" alt="Bedrock" title="Bedrock" />
+                </li>
+                <li>
+                  <img src="./public/projects/stack-icons/aws.png" alt="AWS" title="AWS" />
+                </li>
+              </ul>
+            </div>
+            <div class="card-info__links">
+              <a href="https://github.com/harshitrajsinha/medigo-ai" target="_blank"><button class="github-link">
+                  View Source<span class="source-icon"><img
+                      src="./public/projects/stack-icons/github-logo.png" /></span></button></a>
+            </div>
+          </div>
+        </div>
+
         <div class="cards-container__card featured golang">
           <div class="cards-container__card-img">
             <img class="portrait-orient" src="./public/projects/medigo-portrait.png" />
@@ -258,7 +377,7 @@
             </div>
           </div>
         </div>
-        <div class="cards-container__card featured golang">
+        <div class="cards-container__card golang">
           <div class="cards-container__card-img">
             <img class="portrait-orient" src="./public/projects/vanmango-portrait.png" />
             <img class="landscape-orient" src="./public/projects/vanmango-landscape.png" />
@@ -339,7 +458,8 @@
             </div>
           </div>
         </div>
-        <div class="cards-container__card featured vuejs javascript">
+
+        <div class="cards-container__card vuejs javascript">
           <div class="cards-container__card-img">
             <img class="portrait-orient" src="./public/projects/todo-portrait.png" />
             <img class="landscape-orient" src="./public/projects/todo-landscape.png" />
@@ -450,6 +570,7 @@
             </div>
           </div>
         </div>
+
         <div class="cards-container__card vibe">
           <div class="cards-container__card-img">
             <img class="portrait-orient" src="./public/projects/job-form-builder-portrait.png" />
