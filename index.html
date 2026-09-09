@@ -30,20 +30,21 @@
 <body>
   <main>
     <header>
-      <a href="./" class="logo">Harshit Raj Sinha</a>
+      <a href="./" class="logo" id="cta-logo" onclick="trackButtonClick('logo_button')">Harshit Raj Sinha</a>
       <nav class="nav-container">
         <ul class="nav-container__socials">
           <li>
-            <a href="./public/resume.pdf" title="resume" target="_blank"><img class="socials-resume"
+            <a href="./public/resume.pdf" title="Resume" target="_blank" id="cta-resume" onclick="trackButtonClick('resume_button')"><img class="socials-resume"
                 src="./public/logo/cv-crop.png" alt="cv" />
             </a>
           </li>
+          <!-- For mobile view -->
           <li>
-            <a href="./" title="Home"><button class="home-button">
+            <a href="./" title="Home" id="cta-mobile-home" onclick="trackButtonClick('mobile_home_button')"><button class="home-button">
                 <img src="./public/logo/home.png" alt="home" /></button></a>
           </li>
           <li>
-            <a href="mailto:raj.harshitsinha08@gmail.com" title="raj.harshitsinha08@gmail.com" target="_blank"><img
+            <a href="mailto:raj.harshitsinha08@gmail.com" title="raj.harshitsinha08@gmail.com" target="_blank" id="cta-email" onclick="trackButtonClick('email_button')"><img
                 class="socials-gmail" src="./public/logo/gmail-container.png" alt="gmail" /></a>
           </li>
         </ul>
@@ -67,14 +68,14 @@
           </p>
         </div>
         <div class="section-socials">
-          <a href="https://github.com/harshitrajsinha" title="github@harshitrajsinha" target="_blank"><img
+          <a href="https://github.com/harshitrajsinha" title="github@harshitrajsinha" target="_blank" id="cta-github" onclick="trackButtonClick('github_button')"><img
               class="social-links" src="./public/logo/github-icon.png" alt="github" /></a>
-          <a href="https://www.linkedin.com/in/rajsinha08" title="linkedin@rajsinha08" target="_blank"><img
+          <a href="https://www.linkedin.com/in/rajsinha08" title="linkedin@rajsinha08" target="_blank" id="cta-linkedin" onclick="trackButtonClick('linkedin_button')"><img
               class="social-links" src="./public/logo/linkedin-icon.png" alt="linkedin" /></a>
-          <a href="https://medium.com/@_rajSinha08" title="medium@_rajSinha08" target="_blank"><img class="social-links"
+          <a href="https://medium.com/@_rajSinha08" title="medium@_rajSinha08" target="_blank" id="cta-medium" onclick="trackButtonClick('medium_button')"><img class="social-links"
               src="./public/logo/medium-icon.png" alt="medium" /></a>
         </div>
-        <a href="#projects"><button class="project-button">Jump to Projects</button></a>
+        <a href="#projects"><button class="project-button" id="cta-projects-list" onclick="trackButtonClick('project_list_button')">Jump to Projects</button></a>
       </div>
       <div id="my-photo" class="my-photo">
         <img class="my-photo__image" src="./public/photo.png" alt="photo" />
@@ -172,11 +173,11 @@
       <div class="projects">
         <h1>Projects</h1>
         <!-- Projects Tabs-->
-        <input type="radio" id="featured" name="language" value="Featured" checked />
+        <input type="radio" id="featured" name="language" value="Featured" onclick="trackButtonClick('featured_button')" checked />
         <label for="featured">Featured</label>
-        <input type="radio" id="devops" name="language" value="DevOps" />
+        <input type="radio" id="devops" name="language" value="DevOps" onclick="trackButtonClick('devops_button')" />
         <label for="devops">DevOps</label>
-        <input type="radio" id="golang" name="language" value="Golang" />
+        <input type="radio" id="golang" name="language" value="Golang" onclick="trackButtonClick('golang_button')" />
         <label for="golang">Golang</label>
         <!-- <input type="radio" id="javascript" name="language" value="JavaScript" />
         <label for="javascript">JavaScript</label>
@@ -214,10 +215,10 @@
               </ul>
             </div>
             <div class="card-info__links">
-              <a href="https://github.com/harshitrajsinha/groovify-devops" target="_blank"><button class="github-link">
+              <a href="https://github.com/harshitrajsinha/groovify-devops" target="_blank" onclick="trackButtonClick('groovify_github_button')"><button class="github-link">
                   View Source<span class="source-icon"><img
                       src="./public/projects/stack-icons/github-logo.png" /></span></button></a>
-              <a href="https://medium.com/@_rajSinha08/groovify-devops-project-47d9d840873b" target="_blank"><button
+              <a href="https://medium.com/@_rajSinha08/groovify-devops-project-47d9d840873b" target="_blank" onclick="trackButtonClick('groovify_medium_button')"><button
                   class="site-link">Write-Up</button></a>
             </div>
           </div>
@@ -257,11 +258,11 @@
               </ul>
             </div>
             <div class="card-info__links">
-              <a href="https://github.com/harshitrajsinha/the-wardrobe-devops" target="_blank"><button
+              <a href="https://github.com/harshitrajsinha/the-wardrobe-devops" target="_blank" onclick="trackButtonClick('wardrobe_github_button')"><button
                   class="github-link">
                   View Source<span class="source-icon"><img
                       src="./public/projects/stack-icons/github-logo.png" /></span></button></a>
-              <a href="https://medium.com/@_rajSinha08/the-wardrobe-devops-project-89273ebc4b9e" target="_blank"><button
+              <a href="https://medium.com/@_rajSinha08/the-wardrobe-devops-project-89273ebc4b9e" target="_blank" onclick="trackButtonClick('wardrobe_medium_button')"><button
                   class="site-link">Write-Up</button></a>
             </div>
           </div>
@@ -289,7 +290,7 @@
               </ul>
             </div>
             <div class="card-info__links">
-              <a href="https://github.com/harshitrajsinha/medigo-ai" target="_blank"><button class="github-link">
+              <a href="https://github.com/harshitrajsinha/medigo-ai" target="_blank" onclick="trackButtonClick('medigoai_github_button')"><button class="github-link">
                   View Source<span class="source-icon"><img
                       src="./public/projects/stack-icons/github-logo.png" /></span></button></a>
             </div>
@@ -330,10 +331,10 @@
               </ul>
             </div>
             <div class="card-info__links">
-              <a href="https://github.com/harshitrajsinha/medi-go" target="_blank"><button class="github-link">
+              <a href="https://github.com/harshitrajsinha/medi-go" target="_blank" onclick="trackButtonClick('medigo_github_button')"><button class="github-link">
                   View Source<span class="source-icon"><img
                       src="./public/projects/stack-icons/github-logo.png" /></span></button></a>
-              <a href="https://medigo-frontend.vercel.app/" target="_blank"><button class="site-link">Visit
+              <a href="https://medigo-frontend.vercel.app/" target="_blank" onclick="trackButtonClick('medigo_site_button')"><button class="site-link">Visit
                   Site</button></a>
             </div>
           </div>
@@ -369,11 +370,11 @@
               </ul>
             </div>
             <div class="card-info__links">
-              <a href="https://github.com/harshitrajsinha/go-get-job" target="_blank"><button class="github-link">
+              <a href="https://github.com/harshitrajsinha/go-get-job" target="_blank" onclick="trackButtonClick('gogetjob_github_button')"><button class="github-link">
                   View Source<span class="source-icon"><img
                       src="./public/projects/stack-icons/github-logo.png" /></span></button></a>
 
-              <a href="https://github.com/harshitrajsinha/go-get-job" target="_blank"><button class="site-link">Visit
+              <a href="https://github.com/harshitrajsinha/go-get-job" target="_blank" onclick="trackButtonClick('gogetjob_site_button')"><button class="site-link">Visit
                   Site</button></a>
             </div>
           </div>
@@ -407,12 +408,12 @@
               </ul>
             </div>
             <div class="card-info__links">
-              <a href="https://github.com/harshitrajsinha/goclient-vanmango" target="_blank"><button
+              <a href="https://github.com/harshitrajsinha/goclient-vanmango" target="_blank" onclick="trackButtonClick('vanmango_github_button')"><button
                   class="github-link">
                   View Source<span class="source-icon"><img
                       src="./public/projects/stack-icons/github-logo.png" /></span></button></a>
 
-              <a href="https://vanmango.vercel.app/" target="_blank"><button class="site-link">Visit
+              <a href="https://vanmango.vercel.app/" target="_blank" onclick="trackButtonClick('vanmango_site_button')"><button class="site-link">Visit
                   Site</button></a>
             </div>
           </div>
@@ -450,11 +451,11 @@
               </ul>
             </div>
             <div class="card-info__links">
-              <a href="https://github.com/harshitrajsinha/go-url-shortener" target="_blank"><button class="github-link">
+              <a href="https://github.com/harshitrajsinha/go-url-shortener" target="_blank" onclick="trackButtonClick('gshortify_github_button')"><button class="github-link">
                   View Source<span class="source-icon"><img
                       src="./public/projects/stack-icons/github-logo.png" /></span></button></a>
 
-              <a href="https://gshortify.vercel.app/" target="_blank"><button class="site-link">Visit
+              <a href="https://gshortify.vercel.app/" target="_blank" onclick="trackButtonClick('gshortify_site_button')"><button class="site-link">Visit
                   Site</button></a>
             </div>
           </div>
